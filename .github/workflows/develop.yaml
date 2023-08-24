@@ -1,0 +1,40 @@
+name: Build and push docker images
+
+on:
+  push:
+    branches:
+      - 'develop'
+
+permissions:
+  contents: 'read'
+  id-token: 'write'
+
+jobs:
+  build-stdiff:
+    uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
+    with:
+      context: stdiff
+      tag: v5
+  build-stdiff-xl:
+    uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
+    with:
+      context: stdiff-xl
+      tag: v4
+
+  build-flan-t5-large:
+    uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
+    with:
+      context: flan-t5-large
+      tag: v3
+
+  build-resnet-50:
+    uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
+    with:
+      context: resnet-50
+      tag: v3
+
+  build-tortoise:
+    uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
+    with:
+      context: tortoise
+      tag: v8

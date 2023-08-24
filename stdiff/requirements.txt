@@ -1,0 +1,8 @@
+torch==2.0.1
+diffusers==0.17.1
+transformers==4.30.1
+xformers
+uvicorn[standard]
+fastapi
+accelerate
+sentencepiece

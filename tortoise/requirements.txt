@@ -1,0 +1,5 @@
+tts==0.16.1
+uvicorn[standard]
+fastapi
+accelerate
+sentencepiece
