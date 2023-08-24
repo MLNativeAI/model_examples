@@ -5,7 +5,7 @@ This repo contains complete examples on how to build production-ready ML model D
 
 Most models here come from [HuggingFace](https://huggingface.co/). 
 
-In order to build a new model version, all you have to do is set a new tag in `develop.yaml`. 
+In order to build a new model version, all you have to do is set a new tag in `develop.yaml`.
 
 The build process for each model pre-downloads the model to speed up the startup time of the container.
 
