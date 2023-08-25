@@ -31,7 +31,7 @@ async def load_model():
     global model_ready
     print("Loading model...")
     global tts
-    tts = TTS(TTS.list_models()[0])
+    tts = TTS('tts_models/en/ek1/tacotron2')
     model_ready = True
     print("Model has been loaded. Ready to serve requests.")
 

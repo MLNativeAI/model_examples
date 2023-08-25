@@ -1,3 +1,3 @@
 from TTS.api import TTS
-tts = TTS(TTS.list_models()[0])
+tts = TTS('tts_models/en/ek1/tacotron2')
 print("Download complete")
