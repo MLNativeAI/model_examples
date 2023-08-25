@@ -40,7 +40,7 @@ def predict(payload: Item):
     if not model_ready:
         return {"error": "Model is not yet loaded. Please wait and try again later."}
 
-    tts.tts_to_file(text=payload.input, language=tts.languages[0], speaker=tts.speakers[0], file_path='/data/sound.wav')
+    tts.tts_to_file(text=payload.input, file_path='/data/sound.wav')
 
     # Return sound file as a streaming response
     return FileResponse('/data/sound.wav')
