@@ -14,12 +14,12 @@ jobs:
     uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
     with:
       context: stdiff
-      tag: v5
+      tag: v6
   build-stdiff-xl:
     uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
     with:
       context: stdiff-xl
-      tag: v4
+      tag: v5
 
   build-flan-t5-large:
     uses: MLnativeAI/model_examples/.github/workflows/build_and_push.yaml@develop
